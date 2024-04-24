@@ -1,0 +1,9 @@
+# ignore MS Office files
+.DS_Store
+~$**
+Dockerfile
+Jenkinsfile
+src/Jenkinsfile
+.idea
+
+

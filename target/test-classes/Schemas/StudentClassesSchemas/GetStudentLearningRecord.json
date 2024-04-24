@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "properties": {
+    "student_learning_record_id": {
+      "type": "integer"
+    },
+    "student_learning_record": {
+      "type": "string"
+    },
+    "student_learning_record_metadata": {
+      "type": "string"
+    },
+    "student_learning_record_md5": {
+      "type": "string"
+    },
+    "session_educational_resource_id": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "student_learning_record_id",
+    "student_learning_record",
+    "student_learning_record_metadata",
+    "student_learning_record_md5",
+    "session_educational_resource_id"
+  ]
+}

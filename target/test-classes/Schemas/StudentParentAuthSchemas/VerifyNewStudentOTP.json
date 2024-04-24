@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "create_account_token": {
+      "type": "string"
+    },
+    "create_account_token_exp": {
+      "type": "number"
+    },
+    "message": {
+      "type": "string"
+    },
+    "message_id": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "create_account_token",
+    "create_account_token_exp",
+    "message",
+    "message_id"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "educator_id": {
+      "type": "integer"
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "educator_id",
+    "message"
+  ]
+}

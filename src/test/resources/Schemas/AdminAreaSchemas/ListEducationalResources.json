@@ -1,0 +1,77 @@
+{
+
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "session_id": {
+              "type": "integer"
+            },
+            "educational_resource_id": {
+              "type": "integer"
+            },
+            "educational_resources_name": {
+              "type": "string"
+            },
+            "educational_resource_cdn": {
+              "type": "string"
+            },
+            "educational_resource_s3_bucket": {
+              "type": "string"
+            },
+            "educational_resource_s3_key": {
+              "type": "string"
+            },
+            "is_test_educational_resource": {
+              "type": "boolean"
+            },
+            "file_type_id": {
+              "type": "integer"
+            },
+            "educational_resource_type_id": {
+              "type": "integer"
+            },
+            "educational_resource_created_at": {
+              "type": "string"
+            },
+            "educational_resource_updated_at": {
+              "type": ["string","null"]
+            }
+          },
+          "required": [
+            "session_id",
+            "educational_resource_id",
+            "educational_resources_name",
+            "educational_resource_cdn",
+            "educational_resource_s3_bucket",
+            "educational_resource_s3_key",
+            "is_test_educational_resource",
+            "file_type_id",
+            "educational_resource_type_id",
+            "educational_resource_created_at",
+            "educational_resource_updated_at"
+          ]
+        }
+      ]
+    },
+    "total_count": {
+      "type": "integer"
+    },
+    "page_size": {
+      "type": "integer"
+    },
+    "page_number": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "data",
+    "total_count",
+    "page_size",
+    "page_number"
+  ]
+}

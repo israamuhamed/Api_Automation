@@ -1,0 +1,154 @@
+{
+  "type": "object",
+  "properties": {
+    "classes": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "class_id": {
+              "type": "integer"
+            },
+            "class_title": {
+              "type": "string"
+            },
+            "class_subjects": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "subject_id": {
+                      "type": "integer"
+                    },
+                    "grade_id": {
+                      "type": "integer"
+                    },
+                    "subject_icon": {
+                      "type": "string"
+                    },
+                    "subject_color": {
+                      "type": "string"
+                    },
+                    "subject_name": {
+                      "type": "string"
+                    },
+                    "grade_localization_key": {
+                      "type": ["string","null"]
+                    },
+                    "language_id": {
+                      "type": "integer"
+                    },
+                    "language_iso_code": {
+                      "type": "string"
+                    },
+                    "language_name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "subject_id",
+                    "grade_id",
+                    "subject_icon",
+                    "subject_color",
+                    "subject_name",
+                    "grade_localization_key",
+                    "language_id",
+                    "language_iso_code",
+                    "language_name"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "class_id",
+            "class_title",
+            "class_subjects"
+          ]
+        }
+      ]
+    },
+    "upcoming_sessions": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "class_id": {
+              "type": "integer"
+            },
+            "class_title": {
+              "type": "string"
+            },
+            "session_id": {
+              "type": "integer"
+            },
+            "session_title": {
+              "type": "string"
+            },
+            "session_start_date": {
+              "type": "string"
+            },
+            "session_end_date": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "status_id": {
+              "type": "integer"
+            },
+            "session_duration_in_minutes": {
+              "type": "integer"
+            },
+            "class_block_number": {
+              "type": ["null","integer"]
+            },
+            "materials": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "preview": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "required": [
+            "class_id",
+            "class_title",
+            "session_id",
+            "session_title",
+            "session_start_date",
+            "session_end_date",
+            "status",
+            "status_id",
+            "session_duration_in_minutes",
+            "class_block_number",
+            "materials",
+            "preview"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "classes",
+    "upcoming_sessions"
+  ]
+}

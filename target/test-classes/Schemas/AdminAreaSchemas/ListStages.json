@@ -1,0 +1,56 @@
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "stage_id": {
+              "type": "integer"
+            },
+            "country_iso_code": {
+              "type": "string"
+            },
+            "stage_url_text": {
+              "type": "string"
+            },
+            "stage_order": {
+              "type": "integer"
+            },
+            "stage_localization_key": {
+              "type": "string"
+            },
+            "stage_is_active": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "stage_id",
+            "country_iso_code",
+            "stage_url_text",
+            "stage_order",
+            "stage_localization_key",
+            "stage_is_active"
+          ]
+        }
+      ]
+    },
+    "total_count": {
+      "type": "integer"
+    },
+    "page_size": {
+      "type": "integer"
+    },
+    "page_number": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "data",
+    "total_count",
+    "page_size",
+    "page_number"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "file_type_id": {
+          "type": "integer"
+        },
+        "file_type": {
+          "type": "string"
+        },
+        "file_type_md5": {
+          "type": "null"
+        },
+        "file_type_url": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "file_type_id",
+        "file_type",
+        "file_type_md5",
+        "file_type_url"
+      ]
+    }
+  ]
+}

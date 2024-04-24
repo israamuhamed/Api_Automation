@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "grade_id": {
+              "type": "integer"
+            },
+            "grade_title": {
+              "type": "string"
+            },
+            "grade_order": {
+              "type": "integer"
+            },
+            "grade_localization_key": {
+              "type": "string"
+            },
+            "grade_url_text": {
+              "type": "string"
+            },
+            "grade_icon_text": {
+              "type": ["null","string"]
+            },
+            "grade_is_active": {
+              "type": "boolean"
+            },
+            "stage_url_text": {
+              "type": "string"
+            },
+            "country_iso_code": {
+              "type": "string"
+            },
+            "country_localization_key": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "grade_id",
+            "grade_title",
+            "grade_order",
+            "grade_localization_key",
+            "grade_url_text",
+            "grade_icon_text",
+            "grade_is_active",
+            "stage_url_text",
+            "country_iso_code",
+            "country_localization_key"
+          ]
+        }
+      ]
+    },
+    "total_count": {
+      "type": "integer"
+    },
+    "page_size": {
+      "type": "integer"
+    },
+    "page_number": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "data",
+    "total_count",
+    "page_size",
+    "page_number"
+  ]
+}

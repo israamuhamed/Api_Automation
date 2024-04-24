@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "feedback_score": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "message",
+    "session_id",
+    "feedback_score"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "class_id": {
+      "type": "string"
+    },
+    "student_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "message",
+    "class_id",
+    "student_id"
+  ]
+}

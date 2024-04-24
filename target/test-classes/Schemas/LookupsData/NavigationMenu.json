@@ -1,0 +1,422 @@
+{
+  "type": "object",
+  "properties": {
+    "languages": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "language_id": {
+              "type": "integer"
+            },
+            "language_name": {
+              "type": "string"
+            },
+            "language_iso_code": {
+              "type": "string"
+            },
+            "language_order": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "language_id",
+            "language_name",
+            "language_iso_code",
+            "language_order"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "language_id": {
+              "type": "integer"
+            },
+            "language_name": {
+              "type": "string"
+            },
+            "language_iso_code": {
+              "type": "string"
+            },
+            "language_order": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "language_id",
+            "language_name",
+            "language_iso_code",
+            "language_order"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "language_id": {
+              "type": "integer"
+            },
+            "language_name": {
+              "type": "string"
+            },
+            "language_iso_code": {
+              "type": "string"
+            },
+            "language_order": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "language_id",
+            "language_name",
+            "language_iso_code",
+            "language_order"
+          ]
+        }
+      ]
+    },
+    "countries": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "country_id": {
+              "type": "integer"
+            },
+            "country_iso_code": {
+              "type": "string"
+            },
+            "country_currency_iso_code": {
+              "type": "string"
+            },
+            "country_localization_key": {
+              "type": "string"
+            },
+            "stages": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "stage_id": {
+                      "type": "integer"
+                    },
+                    "stage_localization_key": {
+                      "type": "string"
+                    },
+                    "stage_color": {
+                      "type": "string"
+                    },
+                    "stage_url_text": {
+                      "type": "string"
+                    },
+                    "stage_order": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "stage_id",
+                    "stage_localization_key",
+                    "stage_color",
+                    "stage_url_text",
+                    "stage_order"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "stage_id": {
+                      "type": "integer"
+                    },
+                    "stage_localization_key": {
+                      "type": "string"
+                    },
+                    "stage_color": {
+                      "type": "string"
+                    },
+                    "stage_url_text": {
+                      "type": "string"
+                    },
+                    "stage_order": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "stage_id",
+                    "stage_localization_key",
+                    "stage_color",
+                    "stage_url_text",
+                    "stage_order"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "stage_id": {
+                      "type": "integer"
+                    },
+                    "stage_localization_key": {
+                      "type": "string"
+                    },
+                    "stage_color": {
+                      "type": "string"
+                    },
+                    "stage_url_text": {
+                      "type": "string"
+                    },
+                    "stage_order": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "stage_id",
+                    "stage_localization_key",
+                    "stage_color",
+                    "stage_url_text",
+                    "stage_order"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "country_id",
+            "country_iso_code",
+            "country_currency_iso_code",
+            "country_localization_key",
+            "stages"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "country_id": {
+              "type": "integer"
+            },
+            "country_iso_code": {
+              "type": "string"
+            },
+            "country_currency_iso_code": {
+              "type": "string"
+            },
+            "country_localization_key": {
+              "type": "string"
+            },
+            "stages": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "stage_id": {
+                      "type": "integer"
+                    },
+                    "stage_localization_key": {
+                      "type": "string"
+                    },
+                    "stage_color": {
+                      "type": "string"
+                    },
+                    "stage_url_text": {
+                      "type": "string"
+                    },
+                    "stage_order": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "stage_id",
+                    "stage_localization_key",
+                    "stage_color",
+                    "stage_url_text",
+                    "stage_order"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "country_id",
+            "country_iso_code",
+            "country_currency_iso_code",
+            "country_localization_key",
+            "stages"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "country_id": {
+              "type": "integer"
+            },
+            "country_iso_code": {
+              "type": "string"
+            },
+            "country_currency_iso_code": {
+              "type": "string"
+            },
+            "country_localization_key": {
+              "type": "string"
+            },
+            "stages": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "stage_id": {
+                      "type": "integer"
+                    },
+                    "stage_localization_key": {
+                      "type": "string"
+                    },
+                    "stage_color": {
+                      "type": "string"
+                    },
+                    "stage_url_text": {
+                      "type": "string"
+                    },
+                    "stage_order": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "stage_id",
+                    "stage_localization_key",
+                    "stage_color",
+                    "stage_url_text",
+                    "stage_order"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "country_id",
+            "country_iso_code",
+            "country_currency_iso_code",
+            "country_localization_key",
+            "stages"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "country_id": {
+              "type": "integer"
+            },
+            "country_iso_code": {
+              "type": "string"
+            },
+            "country_currency_iso_code": {
+              "type": "string"
+            },
+            "country_localization_key": {
+              "type": "string"
+            },
+            "stages": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "stage_id": {
+                      "type": "integer"
+                    },
+                    "stage_localization_key": {
+                      "type": "string"
+                    },
+                    "stage_color": {
+                      "type": "string"
+                    },
+                    "stage_url_text": {
+                      "type": "string"
+                    },
+                    "stage_order": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "stage_id",
+                    "stage_localization_key",
+                    "stage_color",
+                    "stage_url_text",
+                    "stage_order"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "country_id",
+            "country_iso_code",
+            "country_currency_iso_code",
+            "country_localization_key",
+            "stages"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "country_id": {
+              "type": "integer"
+            },
+            "country_iso_code": {
+              "type": "string"
+            },
+            "country_currency_iso_code": {
+              "type": "string"
+            },
+            "country_localization_key": {
+              "type": "string"
+            },
+            "stages": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "stage_id": {
+                      "type": "integer"
+                    },
+                    "stage_localization_key": {
+                      "type": "string"
+                    },
+                    "stage_color": {
+                      "type": "string"
+                    },
+                    "stage_url_text": {
+                      "type": "string"
+                    },
+                    "stage_order": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "stage_id",
+                    "stage_localization_key",
+                    "stage_color",
+                    "stage_url_text",
+                    "stage_order"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "country_id",
+            "country_iso_code",
+            "country_currency_iso_code",
+            "country_localization_key",
+            "stages"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "languages",
+    "countries"
+  ]
+}

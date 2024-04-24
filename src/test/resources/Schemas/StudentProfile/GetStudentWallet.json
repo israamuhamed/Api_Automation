@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+    "student_wallet": {
+      "type": "object",
+      "properties": {
+        "student_wallet_balance": {
+          "type": "number"
+        },
+        "currency": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "student_wallet_balance",
+        "currency"
+      ]
+    },
+    "wallet_transactions": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "student_wallet_transaction_id": {
+              "type": "integer"
+            },
+            "student_wallet_transaction_amount": {
+              "type": "number"
+            },
+            "student_wallet_transaction_balance_after": {
+              "type": "integer"
+            },
+            "student_wallet_transaction_opening_balance": {
+              "type": "integer"
+            },
+            "student_wallet_transaction_type_id": {
+              "type": "integer"
+            },
+            "currency": {
+              "type": "string"
+            },
+            "student_wallet_transaction_created_at": {
+              "type": "string"
+            },
+            "student_wallet_transaction_description": {
+              "type": "string"
+            }
+          }
+
+        }
+      ]
+    }
+  },
+  "required": [
+    "student_wallet",
+    "wallet_transactions"
+  ]
+}

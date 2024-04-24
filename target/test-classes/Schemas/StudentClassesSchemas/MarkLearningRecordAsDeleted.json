@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "record_id": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "message",
+    "record_id"
+  ]
+}

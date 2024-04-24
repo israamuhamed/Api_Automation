@@ -1,0 +1,88 @@
+{
+  "type": "object",
+  "properties": {
+    "session_id": {
+      "type": "integer"
+    },
+    "session_title": {
+      "type": "string"
+    },
+    "session_start_date": {
+      "type": "string"
+    },
+    "session_end_date": {
+      "type": "string"
+    },
+    "session_started_date": {
+      "type": "null"
+    },
+    "session_ended_date": {
+      "type": "null"
+    },
+    "is_test_session": {
+      "type": "boolean"
+    },
+    "session_duration_in_minutes": {
+      "type": "integer"
+    },
+    "meta_session_id": {
+      "type": "integer"
+    },
+    "session_order": {
+      "type": "integer"
+    },
+    "educator_id": {
+      "type": "integer"
+    },
+    "educator_first_name": {
+      "type": "string"
+    },
+    "educator_last_name": {
+      "type": "string"
+    },
+    "classes_subjects": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "class_id": {
+              "type": "integer"
+            },
+            "class_title": {
+              "type": "string"
+            },
+            "subject_id": {
+              "type": "integer"
+            },
+            "class_subject_session_price": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "class_id",
+            "class_title",
+            "subject_id",
+            "class_subject_session_price"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "session_id",
+    "session_title",
+    "session_start_date",
+    "session_end_date",
+    "session_started_date",
+    "session_ended_date",
+    "is_test_session",
+    "session_duration_in_minutes",
+    "meta_session_id",
+    "session_order",
+    "educator_id",
+    "educator_first_name",
+    "educator_last_name",
+    "classes_subjects"
+  ]
+}

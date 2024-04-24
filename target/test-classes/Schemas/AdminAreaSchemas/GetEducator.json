@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "properties": {
+    "educator_first_name": {
+      "type": "string"
+    },
+    "educator_last_name": {
+      "type": "string"
+    },
+    "educator_email": {
+      "type": "string"
+    },
+    "educator_bio": {
+      "type": "string"
+    },
+    "educator_image_url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "educator_first_name",
+    "educator_last_name",
+    "educator_email",
+    "educator_bio",
+    "educator_image_url"
+  ]
+}

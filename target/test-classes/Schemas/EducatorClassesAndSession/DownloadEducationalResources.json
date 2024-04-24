@@ -1,0 +1,73 @@
+{
+  "type": "object",
+  "properties": {
+    "resources": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "educational_resource_id": {
+              "type": "string"
+            },
+            "download_link": {
+              "type": "string"
+            },
+            "educational_resource_md5": {
+              "type": "string"
+            },
+            "educational_resource_type_id": {
+              "type": "integer"
+            },
+            "educational_resource_type": {
+              "type": "string"
+            },
+            "session_educational_resource_id": {
+              "type": "integer"
+            },
+            "resources_engines": {
+              "type": ["null","array"],
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "resources_engine_id": {
+                      "type": "integer"
+                    },
+                    "resources_engine": {
+                      "type": "string"
+                    },
+                    "resources_engine_md5": {
+                      "type": "string"
+                    },
+                    "resources_engine_url": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "resources_engine_id",
+                    "resources_engine",
+                    "resources_engine_md5",
+                    "resources_engine_url"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "educational_resource_id",
+            "download_link",
+            "educational_resource_md5",
+            "educational_resource_type_id",
+            "educational_resource_type",
+            "session_educational_resource_id",
+            "resources_engines"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "resources"
+  ]
+}

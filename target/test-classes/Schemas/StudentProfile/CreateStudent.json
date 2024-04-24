@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "message_id": {
+      "type": "integer"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "user_id": {
+          "type": "integer"
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "grade_id": {
+          "type": "integer"
+        },
+        "role": {
+          "type": "string"
+        },
+        "country_requires_mobile": {
+          "type": "boolean"
+        },
+        "country_iso_code": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "social_media_id": {
+          "type": "null"
+        },
+        "social_media": {
+          "type": "null"
+        },
+        "student_wallet_id": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "user_id",
+        "first_name",
+        "last_name",
+        "grade_id",
+        "role",
+        "country_requires_mobile",
+        "country_iso_code",
+        "email",
+        "social_media_id",
+        "social_media",
+        "student_wallet_id"
+      ]
+    },
+    "tokens": {
+      "type": "object",
+      "properties": {
+        "access_token": {
+          "type": "string"
+        },
+        "access_token_exp": {
+          "type": "number"
+        },
+        "refresh_token": {
+          "type": "string"
+        },
+        "refresh_token_exp": {
+          "type": "number"
+        },
+        "firebase_token": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "access_token",
+        "access_token_exp",
+        "refresh_token",
+        "refresh_token_exp",
+        "firebase_token"
+      ]
+    }
+  },
+  "required": [
+    "message",
+    "message_id",
+    "data",
+    "tokens"
+  ]
+}

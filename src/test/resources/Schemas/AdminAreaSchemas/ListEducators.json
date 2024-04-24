@@ -1,0 +1,83 @@
+{
+  "type": ["array","object"],
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "educator_id": {
+          "type": "integer"
+        },
+        "educator_first_name": {
+          "type": "string"
+        },
+        "educator_last_name": {
+          "type": "string"
+        },
+        "educator_email": {
+          "type": "string"
+        },
+        "educator_bio": {
+          "type": "string"
+        },
+        "educator_image_url": {
+          "type": "string"
+        },
+        "educator_is_active": {
+          "type": "boolean"
+        },
+        "educator_is_deleted": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "educator_id",
+        "educator_first_name",
+        "educator_last_name",
+        "educator_email",
+        "educator_bio",
+        "educator_image_url",
+        "educator_is_active",
+        "educator_is_deleted"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "educator_id": {
+          "type": "integer"
+        },
+        "educator_first_name": {
+          "type": "string"
+        },
+        "educator_last_name": {
+          "type": "string"
+        },
+        "educator_email": {
+          "type": "string"
+        },
+        "educator_bio": {
+          "type": "string"
+        },
+        "educator_image_url": {
+          "type": "string"
+        },
+        "educator_is_active": {
+          "type": "boolean"
+        },
+        "educator_is_deleted": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "educator_id",
+        "educator_first_name",
+        "educator_last_name",
+        "educator_email",
+        "educator_bio",
+        "educator_image_url",
+        "educator_is_active",
+        "educator_is_deleted"
+      ]
+    }
+  ]
+}

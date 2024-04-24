@@ -1,0 +1,155 @@
+{
+  "type": "object",
+  "properties": {
+    "class_id": {
+      "type": "integer"
+    },
+    "class_title": {
+      "type": "string"
+    },
+    "educator_id": {
+      "type": "integer"
+    },
+    "session_educator_id": {
+      "type": "integer"
+    },
+    "class_public_listing_date": {
+      "type": "string"
+    },
+    "class_archive_date": {
+      "type": "string"
+    },
+    "class_subject_id": {
+      "type": "integer"
+    },
+    "educator_first_name": {
+      "type": "string"
+    },
+    "educator_last_name": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "integer"
+    },
+    "session_title": {
+      "type": "string"
+    },
+    "session_duration_in_minutes": {
+      "type": "integer"
+    },
+    "class_block_number": {
+      "type": ["null","integer"]
+    },
+    "status": {
+      "type": "string"
+    },
+    "status_id": {
+      "type": "integer"
+    },
+    "educational_resources": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "educational_resource_type_id": {
+              "type": ["null","integer"]
+            },
+            "educational_resource_type": {
+              "type": ["null","string"]
+            },
+            "educational_resource_group": {
+              "type": ["null","string"]
+            },
+            "educational_resources": {
+              "type": ["null","array"],
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "educational_resource_id": {
+                      "type": "integer"
+                    },
+                    "educational_resource_name": {
+                      "type": "string"
+                    },
+                    "educational_resource_md5": {
+                      "type": "string"
+                    },
+                    "file_type_id": {
+                      "type": "integer"
+                    },
+                    "file_type_icon_url": {
+                      "type": "null"
+                    },
+                    "educational_resource_url": {
+                      "type": ["string","null"]
+                    }
+                  },
+                  "required": [
+                    "educational_resource_id",
+                    "educational_resource_name",
+                    "educational_resource_md5",
+                    "file_type_id",
+                    "file_type_icon_url",
+                    "educational_resource_url"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "educational_resource_type_id",
+            "educational_resource_type",
+            "educational_resource_group",
+            "educational_resources"
+          ]
+        }
+      ]
+    },
+    "materials": {
+      "type": "array",
+      "items": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "preview": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    }
+  },
+
+  "required": [
+    "class_id",
+    "class_title",
+    "educator_id",
+    "session_educator_id",
+    "class_public_listing_date",
+    "class_archive_date",
+    "class_subject_id",
+    "educator_first_name",
+    "educator_last_name",
+    "session_id",
+    "session_title",
+    "session_duration_in_minutes",
+    "class_block_number",
+    "status",
+    "status_id",
+    "educational_resources",
+    "materials",
+    "preview"
+  ]
+}
+

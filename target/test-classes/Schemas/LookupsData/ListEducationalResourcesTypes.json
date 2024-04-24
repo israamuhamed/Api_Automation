@@ -1,0 +1,28 @@
+{
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "educational_resource_type_id": {
+          "type": "integer"
+        },
+        "educational_resource_type": {
+          "type": "string"
+        },
+        "is_listed": {
+          "type": "boolean"
+        },
+        "available_post_session": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "educational_resource_type_id",
+        "educational_resource_type",
+        "is_listed",
+        "available_post_session"
+      ]
+    }
+  ]
+}

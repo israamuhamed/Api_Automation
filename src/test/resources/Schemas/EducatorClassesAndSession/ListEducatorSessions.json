@@ -1,0 +1,100 @@
+{
+  "type": "object",
+  "properties": {
+    "class_id": {
+      "type": "integer"
+    },
+    "class_title": {
+      "type": "string"
+    },
+    "sessions": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "session_id": {
+              "type": "integer"
+            },
+            "session_title": {
+              "type": "string"
+            },
+            "session_start_date": {
+              "type": "string"
+            },
+            "session_end_date": {
+              "type": "string"
+            },
+            "session_started_date": {
+              "type": ["null","string"]
+            },
+            "session_ended_date": {
+              "type": ["null","string"]
+            },
+            "agora_resource_id": {
+              "type": ["null","string"]
+            },
+            "agora_sid": {
+              "type": ["null","string"]
+            },
+            "session_duration_in_minutes": {
+              "type": ["null","integer"]
+            },
+            "class_block_number": {
+              "type": ["null","integer"]
+            },
+            "status": {
+              "type": "string"
+            },
+            "status_id": {
+              "type": "integer"
+            },
+            "materials": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "preview": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "required": [
+            "session_id",
+            "session_title",
+            "session_start_date",
+            "session_end_date",
+            "session_started_date",
+            "session_ended_date",
+            "agora_resource_id",
+            "agora_sid",
+            "session_duration_in_minutes",
+            "class_block_number",
+            "status",
+            "status_id",
+            "materials",
+            "preview"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "class_id",
+    "class_title",
+    "sessions"
+  ]
+}

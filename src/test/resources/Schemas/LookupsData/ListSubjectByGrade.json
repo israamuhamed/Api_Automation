@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "subjects": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "subject_id": {
+              "type": "integer"
+            },
+            "subject_name": {
+              "type": "string"
+            },
+            "grade_id": {
+              "type": "integer"
+            },
+            "language_id": {
+              "type": "integer"
+            },
+            "discipline_id": {
+              "type": "integer"
+            },
+            "subject_order": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "subject_id",
+            "subject_name",
+            "grade_id",
+            "language_id",
+            "discipline_id",
+            "subject_order"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "subjects"
+  ]
+}

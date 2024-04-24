@@ -1,0 +1,322 @@
+{
+  "type": "object",
+  "properties": {
+    "class_id": {
+      "type": "integer"
+    },
+    "class_title": {
+      "type": "string"
+    },
+    "class_description": {
+      "type": "string"
+    },
+    "class_payment_option_id": {
+      "type": "integer"
+    },
+    "class_payment_option_name": {
+      "type": "string"
+    },
+    "class_seats_limit": {
+      "type": "integer"
+    },
+    "class_seats_reserved": {
+      "type": "null"
+    },
+    "class_seats_available": {
+      "type": "integer"
+    },
+    "class_block_count": {
+      "type": "integer"
+    },
+    "student_is_enrolled": {
+      "type": "boolean"
+    },
+    "class_start_date": {
+      "type": "string"
+    },
+    "class_end_date": {
+      "type": "string"
+    },
+    "class_semester_localization_key": {
+      "type": "string"
+    },
+    "educators": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "educator_id": {
+              "type": "integer"
+            },
+            "educator_first_name": {
+              "type": "string"
+            },
+            "educator_last_name": {
+              "type": "string"
+            },
+            "educator_order": {
+              "type": "integer"
+            },
+            "educator_bio": {
+              "type": "string"
+            },
+            "educator_image": {
+              "type": "string"
+            },
+            "session_feedback": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "educator_id",
+            "educator_first_name",
+            "educator_last_name",
+            "educator_order",
+            "educator_bio",
+            "educator_image",
+            "session_feedback"
+          ]
+        }
+      ]
+    },
+    "sessions": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "session_id": {
+              "type": "integer"
+            },
+            "session_title": {
+              "type": "string"
+            },
+            "session_start_date": {
+              "type": "string"
+            },
+            "session_end_date": {
+              "type": "string"
+            },
+            "session_order": {
+              "type": "integer"
+            },
+            "class_block_number": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "string"
+            },
+            "status_id": {
+              "type": "integer"
+            },
+            "session_duration_in_minutes": {
+              "type": "integer"
+            },
+            "materials": {
+              "type": "null"
+            },
+            "preview": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "session_id",
+            "session_title",
+            "session_start_date",
+            "session_end_date",
+            "session_order",
+            "class_block_number",
+            "status",
+            "status_id",
+            "session_duration_in_minutes",
+            "materials",
+            "preview"
+          ]
+        }
+      ]
+    },
+    "subjects": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "subject_id": {
+              "type": "integer"
+            },
+            "grade_id": {
+              "type": "integer"
+            },
+            "subject_icon": {
+              "type": "string"
+            },
+            "subject_color": {
+              "type": "string"
+            },
+            "subject_name": {
+              "type": "string"
+            },
+            "class_subject_retail_price": {
+              "type": "null"
+            },
+            "class_subject_discounted_price": {
+              "type": "number"
+            },
+            "class_subject_session_price": {
+              "type": "number"
+            },
+            "grade_localization_key": {
+              "type": "string"
+            },
+            "currency_iso_code": {
+              "type": "string"
+            },
+            "country_iso_code": {
+              "type": "string"
+            },
+            "language_id": {
+              "type": "integer"
+            },
+            "language_iso_code": {
+              "type": "string"
+            },
+            "language_name": {
+              "type": "string"
+            },
+            "class_blocks": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "class_block_number": {
+                      "type": "integer"
+                    },
+                    "class_block_retail_price": {
+                      "type": "number"
+                    },
+                    "class_block_discounted_price": {
+                      "type": "null"
+                    },
+                    "class_block_first_session": {
+                      "type": "integer"
+                    },
+                    "class_block_end_session": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "class_block_number",
+                    "class_block_retail_price",
+                    "class_block_discounted_price",
+                    "class_block_first_session",
+                    "class_block_end_session"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "class_block_number": {
+                      "type": "integer"
+                    },
+                    "class_block_retail_price": {
+                      "type": "number"
+                    },
+                    "class_block_discounted_price": {
+                      "type": "null"
+                    },
+                    "class_block_first_session": {
+                      "type": "null"
+                    },
+                    "class_block_end_session": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "class_block_number",
+                    "class_block_retail_price",
+                    "class_block_discounted_price",
+                    "class_block_first_session",
+                    "class_block_end_session"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "subject_id",
+            "grade_id",
+            "subject_icon",
+            "subject_color",
+            "subject_name",
+            "class_subject_retail_price",
+            "class_subject_discounted_price",
+            "class_subject_session_price",
+            "grade_localization_key",
+            "currency_iso_code",
+            "country_iso_code",
+            "language_id",
+            "language_iso_code",
+            "language_name",
+            "class_blocks"
+          ]
+        }
+      ]
+    },
+    "access_rights": {
+      "type": ["null","object"],
+      "properties": {
+        "class_id": {
+          "type": "integer"
+        },
+        "blocks_numbers": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "sessions_id": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            }
+          ]
+        }
+      },
+      "required": [
+        "class_id",
+        "blocks_numbers",
+        "sessions_id"
+      ]
+    }
+  },
+  "required": [
+    "class_id",
+    "class_title",
+    "class_description",
+    "class_payment_option_id",
+    "class_payment_option_name",
+    "class_seats_limit",
+    "class_seats_reserved",
+    "class_seats_available",
+    "class_block_count",
+    "student_is_enrolled",
+    "class_start_date",
+    "class_end_date",
+    "class_semester_localization_key",
+    "educators",
+    "sessions",
+    "subjects",
+    "access_rights"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "country_id": {
+          "type": "integer"
+        },
+        "country_localization_key": {
+          "type": "string"
+        },
+        "country_iso_code": {
+          "type": "string"
+        },
+        "country_order": {
+          "type": "integer"
+        },
+        "stages": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "stage_id": {
+                  "type": "integer"
+                },
+                "stage_localization_key": {
+                  "type": "string"
+                },
+                "stage_color": {
+                  "type": "string"
+                },
+                "stage_url_text": {
+                  "type": "string"
+                },
+                "stage_order": {
+                  "type": "integer"
+                },
+                "grades": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "grade_id": {
+                          "type": "integer"
+                        },
+                        "grade_localization_key": {
+                          "type": "string"
+                        },
+                        "grade_icon_text": {
+                          "type": ["string","null"]
+                        },
+                        "grade_url_text": {
+                          "type": ["string","null"]
+                        },
+                        "grade_order": {
+                          "type": "integer"
+                        },
+                        "subjects": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "subject_id": {
+                                  "type": "integer"
+                                },
+                                "subject_name": {
+                                  "type": "string"
+                                },
+                                "subject_icon": {
+                                  "type": "null"
+                                },
+                                "subject_color": {
+                                  "type": "null"
+                                },
+                                "subject_url_text": {
+                                  "type": "null"
+                                },
+                                "subject_order": {
+                                  "type": "integer"
+                                },
+                                "subject_is_extra_curriculum": {
+                                  "type": "boolean"
+                                }
+                              },
+                              "required": [
+                                "subject_id",
+                                "subject_name",
+                                "subject_icon",
+                                "subject_color",
+                                "subject_url_text",
+                                "subject_order",
+                                "subject_is_extra_curriculum"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "grade_id",
+                        "grade_localization_key",
+                        "grade_icon_text",
+                        "grade_url_text",
+                        "grade_order",
+                        "subjects"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "stage_id",
+                "stage_localization_key",
+                "stage_color",
+                "stage_url_text",
+                "stage_order",
+                "grades"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "country_id",
+        "country_localization_key",
+        "country_iso_code",
+        "country_order",
+        "stages"
+      ]
+    }
+  ]
+}

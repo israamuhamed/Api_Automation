@@ -1,0 +1,104 @@
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "subject_name": {
+              "type": "string"
+            },
+            "subject_id": {
+              "type": "integer"
+            },
+            "subject_order": {
+              "type": "integer"
+            },
+            "subject_url_text": {
+              "type": ["null","string"]
+            },
+            "subject_icon_s3_key": {
+              "type": "string"
+            },
+            "subject_icon_cdn": {
+              "type": "string"
+            },
+            "grade_id": {
+              "type": "integer"
+            },
+            "grade_title": {
+              "type": "string"
+            },
+            "grade_url_text": {
+              "type": "string"
+            },
+            "grade_localization_key": {
+              "type": "string"
+            },
+            "stage_id": {
+              "type": "integer"
+            },
+            "stage_url_text": {
+              "type": "string"
+            },
+            "stage_localization_key": {
+              "type": "string"
+            },
+            "country_localization_key": {
+              "type": "string"
+            },
+            "country_id": {
+              "type": "integer"
+            },
+            "country_iso_code": {
+              "type": "string"
+            },
+            "country_currency_iso_code": {
+              "type": "string"
+            },
+            "subject_language": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "subject_name",
+            "subject_id",
+            "subject_order",
+            "subject_url_text",
+            "subject_icon_s3_key",
+            "subject_icon_cdn",
+            "grade_id",
+            "grade_title",
+            "grade_url_text",
+            "grade_localization_key",
+            "stage_id",
+            "stage_url_text",
+            "stage_localization_key",
+            "country_localization_key",
+            "country_id",
+            "country_iso_code",
+            "country_currency_iso_code",
+            "subject_language"
+          ]
+        }
+      ]
+    },
+    "total_count": {
+      "type": "integer"
+    },
+    "page_size": {
+      "type": "integer"
+    },
+    "page_number": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "data",
+    "total_count",
+    "page_size",
+    "page_number"
+  ]
+}

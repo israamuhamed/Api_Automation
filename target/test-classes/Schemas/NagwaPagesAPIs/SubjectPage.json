@@ -1,0 +1,185 @@
+{
+  "type": "object",
+  "properties": {
+    "subject_name": {
+      "type": "string"
+    },
+    "subject_id": {
+      "type": "integer"
+    },
+    "subject_is_extra_curriculum": {
+      "type": "boolean"
+    },
+    "subject_order": {
+      "type": "integer"
+    },
+    "subject_url_text": {
+      "type": "string"
+    },
+    "subject_ui_color": {
+      "type": "string"
+    },
+    "subject_icon_url": {
+      "type": "string"
+    },
+    "subject_language": {
+      "type": "string"
+    },
+    "grade_localization_key": {
+      "type": "string"
+    },
+    "grade_id": {
+      "type": ["string","integer"]
+    },
+    "grade_url_text": {
+      "type": "string"
+    },
+    "country_id": {
+      "type": ["string","integer"]
+    },
+    "country_iso_code": {
+      "type": "string"
+    },
+    "country_localization_key": {
+      "type": "string"
+    },
+    "country_currency_iso_code": {
+      "type": "string"
+    },
+    "class_list": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "class_id": {
+              "type": "integer"
+            },
+            "class_title": {
+              "type": "string"
+            },
+            "class_seats_limit": {
+              "type": "integer"
+            },
+            "class_seats_reserved": {
+              "type": "integer"
+            },
+            "class_payment_option_id": {
+              "type": "integer"
+            },
+            "class_payment_option_name": {
+              "type": "string"
+            },
+            "class_subject_session_price": {
+              "type": "number"
+            },
+            "student_is_enrolled": {
+              "type": ["boolean","null"]
+            },
+            "student_has_access_rights": {
+              "type": ["boolean","null"]
+            },
+            "class_available_seats": {
+              "type": "integer"
+            },
+            "sessions_count": {
+              "type": "integer"
+            },
+            "educator_list": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "educator_id": {
+                      "type": "integer"
+                    },
+                    "educator_first_name": {
+                      "type": "string"
+                    },
+                    "educator_last_name": {
+                      "type": "string"
+                    },
+                    "educator_image": {
+                      "type": "string"
+                    },
+                    "scheduled_sessions": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "educator_order": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "educator_id",
+                    "educator_first_name",
+                    "educator_last_name",
+                    "educator_image",
+                    "scheduled_sessions",
+                    "educator_order"
+                  ]
+                }
+              ]
+            },
+            "class_next_session": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "class_id",
+            "class_title",
+            "class_seats_limit",
+            "class_seats_reserved",
+            "class_payment_option_id",
+            "class_payment_option_name",
+            "class_subject_session_price",
+            "student_is_enrolled",
+            "student_has_access_rights",
+            "class_available_seats",
+            "sessions_count",
+            "educator_list",
+            "class_next_session"
+          ]
+        }
+      ]
+    },
+    "course_list": {
+      "type": "array",
+      "items": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    }
+  },
+  "required": [
+    "subject_name",
+    "subject_id",
+    "subject_is_extra_curriculum",
+    "subject_order",
+    "subject_url_text",
+    "subject_ui_color",
+    "subject_icon_url",
+    "subject_language",
+    "grade_localization_key",
+    "grade_id",
+    "grade_url_text",
+    "country_id",
+    "country_iso_code",
+    "country_localization_key",
+    "country_currency_iso_code",
+    "class_list",
+    "course_list"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "resource_id": {
+      "type": "integer"
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "resource_id",
+    "message"
+  ]
+}

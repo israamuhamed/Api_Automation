@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "message_id": {
+      "type": "integer"
+    },
+    "message": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "resend_duration": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "message_id",
+    "message",
+    "duration",
+    "resend_duration"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "class_id": {
+              "type": "integer"
+            },
+            "meta_class_id": {
+              "type": "integer"
+            },
+            "class_title": {
+              "type": "string"
+            },
+            "is_test_class": {
+              "type": "boolean"
+            },
+            "class_enrollment_end_date": {
+              "type": "string"
+            },
+            "class_public_delist_date": {
+              "type": "string"
+            },
+            "class_archive_date": {
+              "type": "string"
+            },
+            "class_public_listing_date": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "class_id",
+            "meta_class_id",
+            "class_title",
+            "is_test_class",
+            "class_enrollment_end_date",
+            "class_public_delist_date",
+            "class_archive_date",
+            "class_public_listing_date"
+          ]
+        }
+      ]
+    },
+    "total_count": {
+      "type": "integer"
+    },
+    "page_size": {
+      "type": "integer"
+    },
+    "page_number": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "data",
+    "total_count",
+    "page_size",
+    "page_number"
+  ]
+}

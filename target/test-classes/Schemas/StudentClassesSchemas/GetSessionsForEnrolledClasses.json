@@ -1,0 +1,438 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "class_id": {
+      "type": "integer"
+    },
+    "sessions_count": {
+      "type": "integer"
+    },
+    "class_title": {
+      "type": "string"
+    },
+    "class_description": {
+      "type": "string"
+    },
+    "class_payment_option_id": {
+      "type": "integer"
+    },
+    "class_payment_option_name": {
+      "type": "string"
+    },
+    "class_seats_limit": {
+      "type": ["integer","null"]
+    },
+    "class_seats_reserved": {
+      "type": ["integer","null"]
+    },
+    "class_block_count": {
+      "type": ["null","integer"]
+    },
+    "student_is_enrolled": {
+      "type": "boolean"
+    },
+    "class_end_date": {
+      "type": ["string","null"]
+    },
+    "class_start_date": {
+      "type": ["string","null"]
+    },
+    "class_semester_localization_key": {
+      "type": ["string","null"]
+    },
+    "educators": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "educator_id": {
+              "type": "integer"
+            },
+            "educator_first_name": {
+              "type": "string"
+            },
+            "educator_last_name": {
+              "type": "string"
+            },
+            "educator_bio": {
+              "type": "string"
+            },
+            "educator_image": {
+              "type": "string"
+            },
+            "educator_order": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "educator_id",
+            "educator_first_name",
+            "educator_last_name",
+            "educator_bio",
+            "educator_image",
+            "educator_order"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "educator_id": {
+              "type": "integer"
+            },
+            "educator_first_name": {
+              "type": "string"
+            },
+            "educator_last_name": {
+              "type": "string"
+            },
+            "educator_bio": {
+              "type": "string"
+            },
+            "educator_image": {
+              "type": "string"
+            },
+            "educator_order": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "educator_id",
+            "educator_first_name",
+            "educator_last_name",
+            "educator_bio",
+            "educator_image",
+            "educator_order"
+          ]
+        }
+      ]
+    },
+    "sessions": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "session_id": {
+              "type": "integer"
+            },
+            "session_title": {
+              "type": "string"
+            },
+            "session_start_date": {
+              "type": "string"
+            },
+            "session_end_date": {
+              "type": "string"
+            },
+            "session_order": {
+              "type": "integer"
+            },
+            "class_block_number": {
+              "type": ["integer","null"]
+            },
+            "status": {
+              "type": "string"
+            },
+            "status_id": {
+              "type": "integer"
+            },
+            "session_duration_in_minutes": {
+              "type": "integer"
+            },
+            "materials": {
+              "type": ["null","array"],
+              "items": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "preview": {
+              "type": ["null","array"],
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "required": [
+            "session_id",
+            "session_title",
+            "session_start_date",
+            "session_end_date",
+            "session_order",
+            "class_block_number",
+            "status",
+            "status_id",
+            "session_duration_in_minutes",
+            "materials",
+            "preview"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "session_id": {
+              "type": "integer"
+            },
+            "session_title": {
+              "type": "string"
+            },
+            "session_start_date": {
+              "type": "string"
+            },
+            "session_end_date": {
+              "type": "string"
+            },
+            "session_order": {
+              "type": "integer"
+            },
+            "class_block_number": {
+              "type": ["integer","null"]
+            },
+            "status": {
+              "type": "string"
+            },
+            "status_id": {
+              "type": "integer"
+            },
+            "session_duration_in_minutes": {
+              "type": "integer"
+            },
+            "materials": {
+              "type": ["null","array"],
+              "items": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "preview": {
+              "type": ["null","array"],
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "required": [
+            "session_id",
+            "session_title",
+            "session_start_date",
+            "session_end_date",
+            "session_order",
+            "class_block_number",
+            "status",
+            "status_id",
+            "session_duration_in_minutes",
+            "materials",
+            "preview"
+          ]
+        }
+      ]
+    },
+    "subjects": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "subject_id": {
+              "type": "integer"
+            },
+            "subject_name": {
+              "type": "string"
+            },
+            "grade_id": {
+              "type": "integer"
+            },
+            "grade_localization_key": {
+              "type": ["string","null"]
+            },
+            "country_iso_code": {
+              "type": "string"
+            },
+            "language_id": {
+              "type": "integer"
+            },
+            "language_iso_code": {
+              "type": "string"
+            },
+            "language_name": {
+              "type": "string"
+            },
+            "subject_icon": {
+              "type": ["string","null"]
+            },
+            "subject_color": {
+              "type": "string"
+            },
+            "class_subject_retail_price": {
+              "type": ["number","null","integer"]
+            },
+            "class_subject_discounted_price": {
+              "type": ["integer","null","number"]
+            },
+            "class_subject_session_price": {
+              "type": ["number","null"]
+            },
+            "currency_iso_code": {
+              "type": "string"
+            },
+            "class_blocks": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "class_block_number": {
+                      "type": ["integer","null"]
+                    },
+                    "class_block_retail_price": {
+                      "type": ["integer","null","number"]
+                    },
+                    "class_block_discounted_price": {
+                      "type": ["integer","null","number"]
+                    },
+                    "class_block_first_session": {
+                      "type": "integer"
+                    },
+                    "class_block_end_session": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "class_block_number",
+                    "class_block_retail_price",
+                    "class_block_discounted_price",
+                    "class_block_first_session",
+                    "class_block_end_session"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "class_block_number": {
+                      "type": ["integer","null"]
+                    },
+                    "class_block_retail_price": {
+                      "type": ["integer","null","number"]
+                    },
+                    "class_block_discounted_price": {
+                      "type": ["integer","null","number"]
+                    },
+                    "class_block_first_session": {
+                      "type": "integer"
+                    },
+                    "class_block_end_session": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "class_block_number",
+                    "class_block_retail_price",
+                    "class_block_discounted_price",
+                    "class_block_first_session",
+                    "class_block_end_session"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "subject_id",
+            "subject_name",
+            "grade_id",
+            "grade_localization_key",
+            "language_id",
+            "language_iso_code",
+            "language_name",
+            "subject_icon",
+            "subject_color",
+            "class_subject_retail_price",
+            "class_subject_discounted_price",
+            "class_subject_session_price",
+            "currency_iso_code",
+            "class_blocks"
+          ]
+        }
+      ]
+    },
+    "access_rights": {
+      "type": "object",
+      "properties": {
+        "class_id": {
+          "type": ["integer","null"]
+        },
+        "blocks_numbers": {
+          "type": ["array","null"],
+          "items": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "sessions_id": {
+          "type": ["array","null"],
+          "items": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        }
+      },
+      "required": [
+        "class_id",
+        "blocks_numbers",
+        "sessions_id"
+      ]
+    }
+  },
+  "required": [
+    "class_id",
+    "sessions_count",
+    "class_title",
+    "class_description",
+    "class_payment_option_id",
+    "class_payment_option_name",
+    "class_seats_limit",
+    "class_seats_reserved",
+    "class_block_count",
+    "student_is_enrolled",
+    "class_end_date",
+    "class_start_date",
+    "class_semester_localization_key",
+    "educators",
+    "sessions",
+    "subjects",
+    "access_rights"
+  ]
+}

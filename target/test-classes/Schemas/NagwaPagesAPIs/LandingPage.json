@@ -1,0 +1,106 @@
+{
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "stage_id": {
+          "type": "integer"
+        },
+        "stage_localization_key": {
+          "type": "string"
+        },
+        "stage_color": {
+          "type": "string"
+        },
+        "stage_url_text": {
+          "type": "string"
+        },
+        "stage_order": {
+          "type": "integer"
+        },
+        "grades": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "grade_id": {
+                  "type": "integer"
+                },
+                "grade_localization_key": {
+                  "type": "string"
+                },
+                "grade_icon_text": {
+                  "type": "string"
+                },
+                "grade_url_text": {
+                  "type": "string"
+                },
+                "grade_order": {
+                  "type": "integer"
+                },
+                "subjects": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "subject_id": {
+                          "type": "integer"
+                        },
+                        "subject_name": {
+                          "type": "string"
+                        },
+                        "subject_is_extra_curriculum": {
+                          "type": "boolean"
+                        },
+                        "subject_icon": {
+                          "type": "string"
+                        },
+                        "subject_order": {
+                          "type": "integer"
+                        },
+                        "subject_color": {
+                          "type": ["string","null"]
+                        },
+                        "subject_url_text": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "subject_id",
+                        "subject_name",
+                        "subject_is_extra_curriculum",
+                        "subject_icon",
+                        "subject_order",
+                        "subject_color",
+                        "subject_url_text"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "grade_id",
+                "grade_localization_key",
+                "grade_icon_text",
+                "grade_url_text",
+                "grade_order",
+                "subjects"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "stage_id",
+        "stage_localization_key",
+        "stage_color",
+        "stage_url_text",
+        "stage_order",
+        "grades"
+      ]
+    }
+  ]
+}

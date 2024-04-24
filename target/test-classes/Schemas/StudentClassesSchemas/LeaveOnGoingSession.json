@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "student_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "message",
+    "session_id",
+    "student_id"
+  ]
+}

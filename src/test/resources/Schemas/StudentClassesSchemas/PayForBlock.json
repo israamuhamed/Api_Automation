@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "message_id": {
+      "type": "integer"
+    },
+    "message": {
+      "type": "string"
+    },
+    "blocks": {
+      "type": "array",
+      "items": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "class_id": {
+      "type": ["string","integer"]
+    },
+    "student_id": {
+      "type": ["string","integer"]
+    },
+    "amount_paid": {
+      "type": "integer"
+    },
+    "currency": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "message_id",
+    "message",
+    "blocks",
+    "class_id",
+    "student_id",
+    "amount_paid",
+    "currency"
+  ]
+}

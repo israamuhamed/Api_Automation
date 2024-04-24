@@ -1,0 +1,32 @@
+{
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "grade_id": {
+          "type": "integer"
+        },
+        "grade_url_text": {
+          "type": "string"
+        },
+        "grade_title": {
+          "type": "string"
+        },
+        "grade_order": {
+          "type": "integer"
+        },
+        "grade_localization_key": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "grade_id",
+        "grade_url_text",
+        "grade_title",
+        "grade_order",
+        "grade_localization_key"
+      ]
+    }
+  ]
+}

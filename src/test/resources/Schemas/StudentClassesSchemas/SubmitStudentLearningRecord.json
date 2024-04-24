@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "student_learning_record_id": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "student_learning_record_id"
+  ]
+}

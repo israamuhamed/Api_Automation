@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "class_id": {
+      "type": "integer"
+    },
+    "amount_paid": {
+      "type": "integer"
+    },
+    "currency": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "message",
+    "class_id",
+    "amount_paid",
+    "currency"
+  ]
+}

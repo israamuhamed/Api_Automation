@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "educator_first_name": {
+      "type": "string"
+    },
+    "educator_last_name": {
+      "type": "string"
+    },
+    "educator_email": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "educator_first_name",
+    "educator_last_name",
+    "educator_email"
+  ]
+}

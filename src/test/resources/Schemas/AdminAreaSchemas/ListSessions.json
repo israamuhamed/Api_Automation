@@ -1,0 +1,99 @@
+{
+  "type": ["array","object"],
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "session_id": {
+          "type": "integer"
+        },
+        "meta_session_id": {
+          "type": "integer"
+        },
+        "session_title": {
+          "type": "string"
+        },
+        "session_start_date": {
+          "type": "string"
+        },
+        "session_end_date": {
+          "type": "string"
+        },
+        "educator_id": {
+          "type": "integer"
+        },
+        "session_order": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "string"
+        },
+        "status_id": {
+          "type": "integer"
+        },
+        "is_test_session": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "session_id",
+        "meta_session_id",
+        "session_title",
+        "session_start_date",
+        "session_end_date",
+        "educator_id",
+        "session_order",
+        "status",
+        "status_id",
+        "is_test_session"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "session_id": {
+          "type": "integer"
+        },
+        "meta_session_id": {
+          "type": "integer"
+        },
+        "session_title": {
+          "type": "string"
+        },
+        "session_start_date": {
+          "type": "string"
+        },
+        "session_end_date": {
+          "type": "string"
+        },
+        "educator_id": {
+          "type": "integer"
+        },
+        "session_order": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "string"
+        },
+        "status_id": {
+          "type": "integer"
+        },
+        "is_test_session": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "session_id",
+        "meta_session_id",
+        "session_title",
+        "session_start_date",
+        "session_end_date",
+        "educator_id",
+        "session_order",
+        "status",
+        "status_id",
+        "is_test_session"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "country_id": {
+          "type": "integer"
+        },
+        "country_iso_code": {
+          "type": "string"
+        },
+        "country_currency_iso_code": {
+          "type": "string"
+        },
+        "country_localization_key": {
+          "type": "string"
+        },
+        "country_dial_code": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "country_id",
+        "country_iso_code",
+        "country_currency_iso_code",
+        "country_localization_key",
+        "country_dial_code"
+      ]
+    }
+  ]
+}

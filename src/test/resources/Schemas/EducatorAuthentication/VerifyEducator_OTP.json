@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "properties": {
+    "message_id": {
+      "type": "integer"
+    },
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "first_name": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "first_name",
+        "last_name",
+        "email",
+        "role"
+      ]
+    },
+    "tokens": {
+      "type": "object",
+      "properties": {
+        "access_token": {
+          "type": "string"
+        },
+        "refresh_token": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "access_token",
+        "refresh_token"
+      ]
+    }
+  },
+  "required": [
+    "message_id",
+    "message",
+    "data",
+    "tokens"
+  ]
+}

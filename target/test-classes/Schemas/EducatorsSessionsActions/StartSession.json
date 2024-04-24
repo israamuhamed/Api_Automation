@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "properties": {
+    "session_id": {
+      "type": "integer"
+    },
+    "agora_resource_id": {
+      "type": "string"
+    },
+    "agora_sid": {
+      "type": "string"
+    },
+    "agora_rtc_token": {
+      "type": "string"
+    },
+    "agora_rtm_token": {
+      "type": "string"
+    },
+    "actual_start_date": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "session_id",
+    "agora_resource_id",
+    "agora_sid",
+    "agora_rtc_token",
+    "agora_rtm_token",
+    "actual_start_date"
+  ]
+}

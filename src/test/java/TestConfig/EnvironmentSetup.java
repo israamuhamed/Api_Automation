@@ -10,15 +10,15 @@ public class EnvironmentSetup {
     public static void setEnvironment(String environment) {
         switch (environment) {
             case "DEMO":
-                RestAssured.baseURI = "https://demo-api.nagwa.io";
+                RestAssured.baseURI = "";
                 RestAssured.basePath = "/v1";
                 break;
             case "BETA":
-                RestAssured.baseURI = "https://beta-api.nagwa.io";
+                RestAssured.baseURI = "";
                 RestAssured.basePath = "/v1";
                 break;
             case "LIVE":
-                RestAssured.baseURI = "https://api.nagwa.io";
+                RestAssured.baseURI = "";
                 RestAssured.basePath = "/v1";
                 break;
             default:

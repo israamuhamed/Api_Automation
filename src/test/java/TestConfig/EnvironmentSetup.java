@@ -4,7 +4,7 @@ import io.restassured.RestAssured;
 
 public class EnvironmentSetup {
 
-    public static String env = "BETA";
-    // Encironment Setup data  :{ "DEMO", "BETA","LIVE"}
+  
+    // Environment Setup data  :{ "DEMO", "BETA","LIVE"}
 
 }
